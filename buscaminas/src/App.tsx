@@ -5,6 +5,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import Joc from "./components/Joc";
+import "./joc.css";
 
 /** Variable global per accedir al joc des de l'HTML */
 let joc: Joc;

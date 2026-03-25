@@ -1,0 +1,131 @@
+
+/* CONTENEDOR GENERAL */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TÍTULO */
+.container h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* CONTROLES (BOTONES DE DIFICULTAD) */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.05);
+}
+
+/* CONTENEDOR DEL JUEGO */
+.game-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* TABLERO */
+#game {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* CARA (BOTÓN DE REINICIO) */
+.cara {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 10px;
+  transition: transform 0.1s ease;
+}
+
+.cara:active {
+  transform: scale(0.9);
+}
+
+/* INSTRUCCIONES */
+.instructions {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.instructions p {
+  margin: 5px 0;
+}
+
+/* TABLA */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* CELDAS */
+td {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #999;
+}
+
+/* CASILLA CERRADA */
+.ocell {
+  background: #d0d0d0;
+}
+
+/* CASILLA REVELADA */
+.revelada {
+  background: #ffffff;
+  border: 1px solid #bbb;
+}
+
+/* CASILLA MARCADA */
+.flagged {
+  background: #ffe9a6;
+}
+
+/* MINA REVELADA */
+.mina-revelada {
+  background: #ff6b6b;
+  color: black;
+}
+
+/* NÚMEROS */
+.numero-1 { color: #3A7AFE; }
+.numero-2 { color: #2ECC71; }
+.numero-3 { color: #E74C3C; }
+.numero-4 { color: #8E44AD; }
+.numero-5 { color: #D35400; }
+.numero-6 { color: #16A085; }
+.numero-7 { color: #2C3E50; }
+.numero-8 { color: #7F8C8D; }
